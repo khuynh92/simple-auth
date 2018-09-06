@@ -15,13 +15,11 @@ PORT=3000
 MONGODB_URI= 'mongodb://localhost/your_mongo_db_name_here
 SECRET='your_secret_here'
 ```
-***
 
 ## To Run
 
 `npm run watch`
 
-***
 
 ## API Endpoints
 
