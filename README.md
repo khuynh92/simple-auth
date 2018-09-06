@@ -41,6 +41,8 @@ expects a user object
 
 JWT token
 
+<hr />
+
 #### GET /signin
 
 **Input**
@@ -51,17 +53,23 @@ expects basic auth in the header
 
 JWT token
 
+<hr />
+
 #### GET /api/v1/profiles
 
 **Output**
 
 all users in the database.
 
+<hr />
+
 #### GET /api/v1/profiles/id/:id
 
 **Output**
 
 Finds a single user matching the :id
+
+<hr />
 
 #### GET /api/v1/profiles/username/:username
 
