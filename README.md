@@ -23,7 +23,7 @@ SECRET='your_secret_here'
 
 ## API Endpoints
 
-` #### POST /signup `
+> #### POST /signup
 
 expects a user object
 
