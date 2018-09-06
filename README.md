@@ -63,7 +63,7 @@ all users in the database.
 
 <hr />
 
-#### GET /api/v1/profiles/id/:id
+```#### GET /api/v1/profiles/id/:id```
 
 **Output**
 
