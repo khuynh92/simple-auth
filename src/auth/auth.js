@@ -2,7 +2,6 @@ import User from '../models/users.js';
 
 export default (req, res, next) => {
   let authenticate = (userObj) => {
-    console.log('authenticating');
     User.authenticate(userObj)
       .then(user => {
         if (!user) {
@@ -20,6 +19,7 @@ export default (req, res, next) => {
         if(!user) {
           next(401);
         } else {
+          req.token = token;
           req.id = user._id;
           next();
         }
@@ -27,6 +27,11 @@ export default (req, res, next) => {
   };
 
   try {
+
+    if(req.cookies.token) {
+      return authorize(req.cookies.token);
+    }
+    
     let userObj = {};
     let authHeader = req.headers.authorization;
 
