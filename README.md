@@ -65,7 +65,7 @@ all users in the database.
 Finds a single user matching the :id
 
 
-#### GET `/api/v1/profiles/username/:username`
+#### `GET /api/v1/profiles/username/:username`
 
 **Output**
 
