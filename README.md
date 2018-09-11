@@ -12,13 +12,15 @@ This is a simple server that uses signin / sign up to provide a user with a JWT 
 
 ```
 PORT=3000
-MONGODB_URI= 'mongodb://localhost/your_mongo_db_name_here
+MONGODB_URI= 'mongodb://localhost/your_mongo_db_name_here'
 SECRET='your_secret_here'
 ```
 
 ## To Run
 
-`npm run watch`
+1. Start up a local mongoDB server
+
+1. `npm run watch`
 
 
 ## API Endpoints
