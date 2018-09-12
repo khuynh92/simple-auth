@@ -2,6 +2,7 @@ import express from 'express';
 
 import morgan from 'morgan';
 import cookieParser from 'cookie-parser';
+import cors from 'cors';
 
 import signUpRouter from './routes/signUpRouter.js';
 import profileRouter from './routes/profileRouter.js';
@@ -17,6 +18,7 @@ import conflict from './middleware/409.js';
 let app = express();
 
 //dev & parser middleware
+app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
