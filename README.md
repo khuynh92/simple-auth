@@ -20,7 +20,7 @@ SECRET='your_secret_here'
 
 1. Start up a local mongoDB server
 
-1. `npm run watch`
+1. `npm i ` or `npm run watch`
 
 
 ## API Endpoints
